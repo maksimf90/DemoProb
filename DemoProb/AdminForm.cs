@@ -18,10 +18,10 @@ namespace DemoProb
         public AdminForm()
         {
             InitializeComponent();
-            LoadData();
+            
         } 
 
-        private void LoadData()
+        private void AdminForm_Load(object sender, EventArgs e)
         {
             string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=11111;Database=DemoProb";
 
@@ -34,11 +34,6 @@ namespace DemoProb
                 adapter.Fill(dataTable);
                 dataGridView1.DataSource = dataTable;
             }
-        }
-
-        private void AdminForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
     
