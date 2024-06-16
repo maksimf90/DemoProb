@@ -56,13 +56,6 @@ namespace DemoProb
             }
         }
 
-      
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnRegister_Click_1(object sender, EventArgs e)
         {
             RegisterForm formRegister = new RegisterForm();
